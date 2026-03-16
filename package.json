@@ -1,18 +1,35 @@
 {
   "name": "n8n-agent-cli",
   "version": "0.1.0",
-  "description": "CLI for coding agents to manage n8n workflows",
+  "description": "CLI for coding agents to manage n8n workflows via the Public API",
   "type": "module",
+  "license": "MIT",
   "bin": {
     "n8n-agent": "dist/bin.js"
   },
+  "files": [
+    "dist",
+    "LICENSE"
+  ],
   "scripts": {
     "build": "tsc",
     "dev": "tsx src/bin.ts",
+    "prepublishOnly": "npm run build",
     "test": "vitest run",
     "test:watch": "vitest"
   },
-  "private": true,
+  "keywords": [
+    "n8n",
+    "workflow",
+    "cli",
+    "automation",
+    "agent",
+    "devops"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mrsOwlex/n8n-agent-cli.git"
+  },
   "engines": {
     "node": ">=20"
   },
