@@ -1,0 +1,28 @@
+{
+  "name": "n8n-agent-cli",
+  "version": "0.1.0",
+  "description": "CLI for coding agents to manage n8n workflows",
+  "type": "module",
+  "bin": {
+    "n8n-agent": "dist/bin.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/bin.ts",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "private": true,
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "commander": "^13.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.7.0",
+    "vitest": "^3.0.0"
+  }
+}
